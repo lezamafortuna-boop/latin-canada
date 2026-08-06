@@ -41,7 +41,11 @@
       "Bash(node shot-es.js)",
       "Bash(netstat -ano)",
       "Bash(awk '{print $5}')",
-      "Bash(xargs -r -I{} taskkill //F //PID {})"
+      "Bash(xargs -r -I{} taskkill //F //PID {})",
+      "Bash(git ls-tree *)",
+      "Bash(git status *)",
+      "Bash(git checkout *)",
+      "Bash(node shot-minimal.js)"
     ],
     "additionalDirectories": [
       "C:\\Users\\User\\Documents\\CircuitStream\\LatinCanada\\public",
