@@ -1,0 +1,51 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/User/Documents/LezamaKitchenLabs/Brain/**)",
+      "Read(//c/Users/User/.claude/projects/C--Users-User/memory/**)",
+      "Bash(npm -v)",
+      "Bash(npx --yes create-next-app@latest . --js --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack --skip-install)",
+      "Read(//c/Users/User/Documents/CircuitStream/**)",
+      "Bash(rm -rf latincanada-tmp)",
+      "Bash(npx --yes create-next-app@latest latincanada-tmp --js --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(cd \"C:\\\\Users\\\\User\\\\Documents\\\\CircuitStream\\\\LatinCanada\" && rm -f public/file.svg public/globe.svg public/next.svg public/vercel.svg public/window.svg)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(node -e \"const m = require\\('lucide-react'\\); console.log\\(Object.keys\\(m\\).filter\\(k => /insta|you|tube|linked|social|brand/i.test\\(k\\)\\)\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(curl -sf http://localhost:3000)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(npx --yes playwright install chromium --with-deps)",
+      "Bash(node \"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-User-Documents-CircuitStream-LatinCanada\\\\08975d0d-9dbf-45d4-b8ad-a3cc99c0e642\\\\scratchpad\\\\shot.js\")",
+      "Bash(npm init *)",
+      "Bash(node shot.js)",
+      "Bash(node -e \"console.log\\(require.resolve\\('sharp'\\)\\)\")",
+      "Bash(magick -version)",
+      "Bash(python -c \"import PIL; print\\('PIL ok'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(node shot-full.js)",
+      "Bash(node shot-sections.js)",
+      "Bash(cd \"C:\\\\Users\\\\User\\\\Documents\\\\CircuitStream\\\\DemoCode\\\\francisco-portfolio\" && find . -maxdepth 3 -not -path '*/node_modules/*' -not -path '*/.git/*' | sort)",
+      "Read(//c/Users/User/Documents/CircuitStream/DemoCode/francisco-portfolio/**)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\User\\\\Documents\\\\CircuitStream\\\\LatinCanada\\\\public\\\\images\\\\work\\\\jouska\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\User\\\\Documents\\\\CircuitStream\\\\LatinCanada\\\\public\\\\images\\\\work\\\\luis-at-home\")",
+      "Bash(node shot-work.js)",
+      "Read(//c/Users/User/Documents/CircuitStream/DemoCode/francisco-portfolio/assets/images/LaH/**)",
+      "Read(//c/Users/User/Documents/CircuitStream/DemoCode/francisco-portfolio/assets/images/**)",
+      "Bash(curl -s \"http://localhost:3000/images/work/luis-at-home/still-04.jpg\" -o /tmp/check.jpg -w \"%{http_code} %{size_download}\\\\n\")",
+      "Read(//tmp/**)",
+      "Bash(curl -s \"http://localhost:3000/_next/image?url=%2Fimages%2Fwork%2Fluis-at-home%2Fstill-04.jpg&w=1920&q=75\" -o /tmp/nextimg.jpg -w \"%{http_code} %{size_download}\\\\n\")",
+      "Bash(cp /tmp/nextimg.jpg \"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-User-Documents-CircuitStream-LatinCanada\\\\08975d0d-9dbf-45d4-b8ad-a3cc99c0e642\\\\scratchpad\\\\nextimg-check.jpg\")",
+      "Bash(node debug-src.js)",
+      "Bash(curl -s \"http://localhost:3000/_next/image?url=%2Fimages%2Fwork%2Fluis-at-home%2Fstill-04.jpg&w=3840&q=75\" -o /tmp/nextimg2.jpg -w \"%{http_code} %{size_download}\\\\n\")",
+      "Bash(node shot-es.js)",
+      "Bash(netstat -ano)",
+      "Bash(awk '{print $5}')",
+      "Bash(xargs -r -I{} taskkill //F //PID {})"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\User\\Documents\\CircuitStream\\LatinCanada\\public",
+      "\\tmp"
+    ]
+  }
+}
