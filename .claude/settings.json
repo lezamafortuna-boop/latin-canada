@@ -41,7 +41,12 @@
       "Bash(node shot-es.js)",
       "Bash(netstat -ano)",
       "Bash(awk '{print $5}')",
-      "Bash(xargs -r -I{} taskkill //F //PID {})"
+      "Bash(xargs -r -I{} taskkill //F //PID {})",
+      "Bash(node shot-contact.js)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000)",
+      "Bash(curl -sI http://localhost:3000)",
+      "Bash(node shot-contact2.js)"
     ],
     "additionalDirectories": [
       "C:\\Users\\User\\Documents\\CircuitStream\\LatinCanada\\public",

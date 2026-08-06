@@ -34,7 +34,6 @@ src/
     LanguageContext.js  React context powering the language toggle (persists to localStorage)
 public/
   brand/               Logo assets
-  videos/               Hero background video placeholder (poster only — see below)
   images/
     work/
       luis-at-home/    Real stills from "Luis at Home: Chronicle of an Expat" (dir. Francisco Passuelo, prod. Latin Canada)
@@ -43,10 +42,8 @@ public/
 
 ## Replacing Placeholder Media
 
-### 1. Hero background video
-- Add your file to `public/videos/hero-reel.mp4`
-- `src/components/Hero.js` already points `<source src="/videos/hero-reel.mp4">` at it
-- Optional: replace `public/videos/hero-poster.svg` with a real poster frame (jpg/png/svg all work — just update the `poster` prop)
+### 1. Hero
+- The hero is a white section built around the swallow mark (`public/brand/latincanada-mark.png`) — no background video or image. If you want to bring cinematic video back into the hero later, re-add a `<video>` element in `src/components/Hero.js` with a dark overlay treatment (it was intentionally removed when the hero switched to a white background)
 
 ### 2. Our Work — Crying at the Dairy Queen
 - Still in post-production, no stills yet — `src/components/Work.js` renders a "Coming Soon" tile for it automatically (see `FEATURED_IMAGE` map — it has no entry, so the placeholder branch renders)

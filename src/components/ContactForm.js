@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, CheckCircle2 } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 
 const EMPTY_FORM = { name: "", email: "", subject: "", message: "" };
@@ -45,8 +45,12 @@ export default function ContactForm() {
             </p>
 
             <div className="mt-10 space-y-5">
-              <InfoRow icon={Mail} label={c.emailLabel} value="hello@latincanada.ca" />
-              <InfoRow icon={Phone} label={c.phoneLabel} value="+1 (604) 555-0182" />
+              <InfoRow
+                icon={Mail}
+                label={c.emailLabel}
+                value="franciscopassuelo@gmail.com"
+                href="mailto:franciscopassuelo@gmail.com"
+              />
               <InfoRow icon={MapPin} label={c.locationLabel} value={c.location} />
             </div>
           </div>
@@ -122,18 +126,28 @@ export default function ContactForm() {
   );
 }
 
-function InfoRow({ icon: Icon, label, value }) {
+function InfoRow({ icon: Icon, label, value, href }) {
+  const content = (
+    <>
+      <p className="text-xs uppercase tracking-[0.2em] text-paper/45">
+        {label}
+      </p>
+      <p className="mt-1 text-paper/85">{value}</p>
+    </>
+  );
+
   return (
     <div className="flex items-start gap-4">
       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/15 text-sky-300">
         <Icon size={17} />
       </div>
-      <div>
-        <p className="text-xs uppercase tracking-[0.2em] text-paper/45">
-          {label}
-        </p>
-        <p className="mt-1 text-paper/85">{value}</p>
-      </div>
+      {href ? (
+        <a href={href} className="transition-colors hover:text-sky-300">
+          {content}
+        </a>
+      ) : (
+        <div>{content}</div>
+      )}
     </div>
   );
 }

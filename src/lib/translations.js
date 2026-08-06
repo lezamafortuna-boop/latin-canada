@@ -19,7 +19,7 @@ const translations = {
       cta: "Contact Us",
     },
     hero: {
-      eyebrow: "A Cinematic Production House",
+      eyebrow: "Vancouver Based Production House",
       tagline: "Where Latin roots meet Canadian horizons.",
       subtext:
         "Every project carries a piece of where we came from and where we now belong.",
@@ -234,7 +234,6 @@ const translations = {
       formSuccessBody:
         "Thank you for reaching out. We'll be in touch shortly.",
       emailLabel: "Email",
-      phoneLabel: "Phone",
       locationLabel: "Based in",
       location: "Vancouver, British Columbia, Canada",
     },
@@ -262,7 +261,7 @@ const translations = {
       cta: "Contáctanos",
     },
     hero: {
-      eyebrow: "Una Casa de Producción Cinematográfica",
+      eyebrow: "Casa de Producción con Sede en Vancouver",
       tagline: "Donde las raíces latinas se encuentran con los horizontes canadienses.",
       subtext:
         "Cada proyecto lleva consigo un pedazo de dónde venimos y a dónde pertenecemos ahora.",
@@ -477,7 +476,6 @@ const translations = {
       formSuccessBody:
         "Gracias por escribirnos. Nos pondremos en contacto pronto.",
       emailLabel: "Correo",
-      phoneLabel: "Teléfono",
       locationLabel: "Con sede en",
       location: "Vancouver, Columbia Británica, Canadá",
     },
