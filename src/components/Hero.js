@@ -29,10 +29,6 @@ export default function Hero() {
           {t.hero.tagline}
         </h1>
 
-        <p className="mt-6 max-w-xl text-balance text-base text-navy-900/65 sm:text-lg">
-          {t.hero.subtext}
-        </p>
-
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <Link
             href="#contact"

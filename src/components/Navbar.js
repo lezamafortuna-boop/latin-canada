@@ -6,13 +6,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 
-const NAV_LINKS = [
-  { href: "#about", key: "about" },
-  { href: "#founder", key: "founder" },
-  { href: "#services", key: "services" },
-  { href: "#work", key: "work" },
-  { href: "#gallery", key: "gallery" },
-];
+const NAV_LINKS = [{ href: "#work", key: "work" }];
 
 export default function Navbar() {
   const { lang, toggleLang, t } = useLanguage();
@@ -28,10 +22,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
+      className={`fixed inset-x-0 top-0 z-50 border-b bg-white transition-shadow duration-300 ${
         scrolled
-          ? "bg-navy-950/90 backdrop-blur-md border-b border-white/10"
-          : "bg-transparent"
+          ? "border-navy-900/10 shadow-[0_1px_0_0_rgba(10,21,38,0.04)]"
+          : "border-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
@@ -44,8 +38,8 @@ export default function Navbar() {
             className="h-8 w-auto object-contain"
             priority
           />
-          <span className="font-display text-lg tracking-wide text-paper">
-            Latin<span className="text-red-500">Canada</span>
+          <span className="font-display text-lg tracking-wide text-navy-950">
+            Latin<span className="text-red-600">Canada</span>
           </span>
         </Link>
 
@@ -54,7 +48,7 @@ export default function Navbar() {
             <Link
               key={link.key}
               href={link.href}
-              className="text-sm font-medium tracking-wide text-paper/80 transition-colors hover:text-sky-300"
+              className="text-sm font-medium tracking-wide text-navy-900/70 transition-colors hover:text-red-600"
             >
               {t.nav[link.key]}
             </Link>
@@ -77,7 +71,7 @@ export default function Navbar() {
             type="button"
             aria-label="Toggle menu"
             onClick={() => setOpen((v) => !v)}
-            className="rounded-full border border-white/15 p-2 text-paper"
+            className="rounded-full border border-navy-900/15 p-2 text-navy-950"
           >
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -85,14 +79,14 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-white/10 bg-navy-950/95 backdrop-blur-md lg:hidden">
+        <div className="border-t border-navy-900/10 bg-white lg:hidden">
           <div className="flex flex-col gap-1 px-6 py-4">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.key}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3 text-base font-medium text-paper/90 transition-colors hover:bg-white/5"
+                className="rounded-lg px-3 py-3 text-base font-medium text-navy-900/85 transition-colors hover:bg-navy-950/5"
               >
                 {t.nav[link.key]}
               </Link>
@@ -117,18 +111,18 @@ function LangToggle({ lang, toggleLang }) {
       type="button"
       onClick={toggleLang}
       aria-label="Toggle language"
-      className="flex items-center rounded-full border border-white/20 text-xs font-semibold tracking-wide text-paper/90"
+      className="flex items-center rounded-full border border-navy-900/20 text-xs font-semibold tracking-wide text-navy-900/80"
     >
       <span
         className={`rounded-full px-3 py-1.5 transition-colors ${
-          lang === "en" ? "bg-red-600 text-paper" : "text-paper/60"
+          lang === "en" ? "bg-red-600 text-paper" : "text-navy-900/50"
         }`}
       >
         EN
       </span>
       <span
         className={`rounded-full px-3 py-1.5 transition-colors ${
-          lang === "es" ? "bg-red-600 text-paper" : "text-paper/60"
+          lang === "es" ? "bg-red-600 text-paper" : "text-navy-900/50"
         }`}
       >
         ES
