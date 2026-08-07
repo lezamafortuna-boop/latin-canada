@@ -37,12 +37,6 @@ export default function ContactForm() {
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-5">
             <p className="section-eyebrow text-sky-300">{c.eyebrow}</p>
-            <h2 className="font-display text-balance mt-4 text-3xl font-semibold leading-tight text-paper sm:text-5xl">
-              {c.title}
-            </h2>
-            <p className="mt-5 max-w-md text-base leading-relaxed text-paper/70 sm:text-lg">
-              {c.subtitle}
-            </p>
 
             <div className="mt-10 space-y-5">
               <InfoRow
