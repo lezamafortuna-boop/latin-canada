@@ -6,6 +6,7 @@ import { useLanguage } from "@/lib/LanguageContext";
 const FEATURED_IMAGE = {
   "luis-at-home": "/images/work/luis-at-home/featured.jpg",
   jouska: "/images/work/jouska/featured.jpg",
+  "crying-at-dairy-queen": "/images/work/crying-at-the-dairy-queen/catdq.png",
 };
 
 export default function Work() {

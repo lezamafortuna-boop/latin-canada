@@ -45,7 +45,8 @@
       "Bash(git ls-tree *)",
       "Bash(git status *)",
       "Bash(git checkout *)",
-      "Bash(node shot-minimal.js)"
+      "Bash(node shot-minimal.js)",
+      "WebSearch"
     ],
     "additionalDirectories": [
       "C:\\Users\\User\\Documents\\CircuitStream\\LatinCanada\\public",

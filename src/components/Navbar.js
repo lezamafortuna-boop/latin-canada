@@ -39,7 +39,7 @@ export default function Navbar() {
             priority
           />
           <span className="font-display text-lg tracking-wide text-navy-950">
-            Latin<span className="text-red-600">Canada</span>
+            LATIN<span className="text-red-600">CANADA</span>
           </span>
         </Link>
 

@@ -19,8 +19,8 @@ const translations = {
       cta: "Contact Us",
     },
     hero: {
-      eyebrow: "Vancouver Based Production House",
-      tagline: "Where Latin roots meet Canadian horizons.",
+      eyebrow: "",
+      tagline: "Vancouver Based Production House.",
       subtext:
         "Every project carries a piece of where we came from and where we now belong.",
       ctaPrimary: "Explore Our Work",
@@ -186,11 +186,11 @@ const translations = {
         type: "Short Film",
         title: "Jouska",
         director: "Vanesa Paredes",
-        producer: "Qualia",
+        producer: "Latin Canada / Vanesa Paredes",
         cinematography: "Francisco Passuelo",
         year: "2026",
         description:
-          "A short film named for the imagined conversations we replay long after they've ended.",
+          "A Hypothetical or imaginary converstation that you compulsively play out in your head. `Jouska the end` is a sci-fi drama set in Vancouver, Canada.",
         status: "released",
       },
       {
@@ -198,11 +198,11 @@ const translations = {
         type: "Music Video",
         title: "Crying at the Dairy Queen",
         director: "Francisco Passuelo",
-        producer: "Jandrou, Casa Colores",
+        producer: "Latin Canada / Jandrou",
         cinematography: "Francisco Passuelo",
         year: "2026",
         description:
-          "A music video collaboration currently in post-production.",
+          "A music video collaboration with Salvadorean/Canadian synth-pop artist Jandrou.",
         status: "comingSoon",
       },
     ],
@@ -261,8 +261,8 @@ const translations = {
       cta: "Contáctanos",
     },
     hero: {
-      eyebrow: "Casa de Producción con Sede en Vancouver",
-      tagline: "Donde las raíces latinas se encuentran con los horizontes canadienses.",
+      eyebrow: "",
+      tagline: "Casa de Producción con Sede en Vancouver.",
       subtext:
         "Cada proyecto lleva consigo un pedazo de dónde venimos y a dónde pertenecemos ahora.",
       ctaPrimary: "Explora Nuestro Trabajo",
@@ -428,11 +428,11 @@ const translations = {
         type: "Cortometraje",
         title: "Jouska",
         director: "Vanesa Paredes",
-        producer: "Qualia",
+        producer: "Latin Canada / Vanesa Paredes",
         cinematography: "Francisco Passuelo",
         year: "2026",
         description:
-          "Un cortometraje que toma su nombre de las conversaciones imaginarias que repetimos mucho después de que terminaron.",
+          "Una conversación hipotética o imaginaria que reproduces de forma compulsiva en tu cabeza. `Jouska the end` es un drama de ciencia ficción ambientado en Vancouver, Canadá.",
         status: "released",
       },
       {
@@ -440,11 +440,11 @@ const translations = {
         type: "Video Musical",
         title: "Crying at the Dairy Queen",
         director: "Francisco Passuelo",
-        producer: "Jandrou, Casa Colores",
+        producer: "Latin Canada / Jandrou",
         cinematography: "Francisco Passuelo",
         year: "2026",
         description:
-          "Una colaboración de video musical actualmente en posproducción.",
+          "Una colaboración para un video musical con el artista salvadoreño-canadiense de synth-pop Jandrou.",
         status: "comingSoon",
       },
     ],
