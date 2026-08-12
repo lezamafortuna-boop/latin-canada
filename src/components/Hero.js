@@ -15,11 +15,11 @@ export default function Hero() {
     >
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-6 text-center">
         <Image
-          src="/brand/latincanada-logo.png"
-          alt="Latin Canada — swallow enclosed in a postage stamp"
-          width={246}
-          height={200}
-          className="mb-8 h-[408px] w-auto object-contain sm:h-[489px]"
+          src="/brand/LatinCanada_Nostamp.svg"
+          alt="Latin Canada brand mark"
+          width={900}
+          height={700}
+          className="mb-8 h-[300px] w-auto object-contain sm:h-[420px]"
           priority
         />
 

@@ -56,7 +56,7 @@ export default function Navbar() {
           <LangToggle lang={lang} toggleLang={toggleLang} />
           <Link
             href="#contact"
-            className="rounded-full bg-red-600 px-4 py-1.5 text-sm font-semibold tracking-wide text-paper transition-colors hover:bg-red-500"
+            className="inline-flex items-center justify-center rounded-full bg-red-600 px-5 py-2 text-sm font-semibold tracking-wide text-paper transition-colors hover:bg-red-500"
           >
             {t.nav.cta}
           </Link>
@@ -91,7 +91,7 @@ export default function Navbar() {
             <Link
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-full bg-red-600 px-5 py-3 text-center text-sm font-semibold text-paper"
+              className="mt-2 rounded-full bg-red-600 px-4 py-1.5 text-center text-sm font-semibold text-paper"
             >
               {t.nav.cta}
             </Link>
@@ -108,17 +108,17 @@ function LangToggle({ lang, toggleLang }) {
       type="button"
       onClick={toggleLang}
       aria-label="Toggle language"
-      className="flex items-center rounded-full border border-navy-900/20 text-xs font-semibold tracking-wide text-navy-900/80"
+      className="flex items-center overflow-hidden rounded-full border border-navy-900/20 text-xs font-semibold tracking-wide text-navy-900/80"
     >
       <span
-        className={`rounded-full px-3 py-1.5 transition-colors ${
+        className={`inline-flex h-9 items-center justify-center px-4 transition-colors ${
           lang === "en" ? "bg-red-600 text-paper" : "text-navy-900/50"
         }`}
       >
         EN
       </span>
       <span
-        className={`rounded-full px-3 py-1.5 transition-colors ${
+        className={`inline-flex h-9 items-center justify-center px-4 transition-colors ${
           lang === "es" ? "bg-red-600 text-paper" : "text-navy-900/50"
         }`}
       >
