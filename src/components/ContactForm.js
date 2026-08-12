@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, MapPin, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, CheckCircle2, Instagram } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 
 const EMPTY_FORM = { name: "", email: "", subject: "", message: "" };
@@ -44,6 +44,12 @@ export default function ContactForm() {
                 label={c.emailLabel}
                 value="franciscopassuelo@gmail.com"
                 href="mailto:franciscopassuelo@gmail.com"
+              />
+              <InfoRow
+                icon={Instagram}
+                label={c.instagramLabel}
+                value={c.instagramHandle}
+                href="https://www.instagram.com/latin.canada?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               />
               <InfoRow icon={MapPin} label={c.locationLabel} value={c.location} />
             </div>

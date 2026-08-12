@@ -189,6 +189,9 @@ const translations = {
         producer: "Latin Canada / Vanesa Paredes",
         cinematography: "Francisco Passuelo",
         year: "2026",
+        instagram:
+          "https://www.instagram.com/jouska_theend?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        instagramHandle: "@jouska_theend",
         description:
           "A Hypothetical or imaginary converstation that you compulsively play out in your head. `Jouska the end` is a sci-fi drama set in Vancouver, Canada.",
         status: "released",
@@ -234,6 +237,8 @@ const translations = {
       formSuccessBody:
         "Thank you for reaching out. We'll be in touch shortly.",
       emailLabel: "Email",
+      instagramLabel: "Instagram",
+      instagramHandle: "@latin.canada",
       locationLabel: "Based in",
       location: "Vancouver, British Columbia, Canada",
     },
@@ -431,6 +436,9 @@ const translations = {
         producer: "Latin Canada / Vanesa Paredes",
         cinematography: "Francisco Passuelo",
         year: "2026",
+        instagram:
+          "https://www.instagram.com/jouska_theend?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        instagramHandle: "@jouska_theend",
         description:
           "Una conversación hipotética o imaginaria que reproduces de forma compulsiva en tu cabeza. `Jouska the end` es un drama de ciencia ficción ambientado en Vancouver, Canadá.",
         status: "released",
@@ -476,6 +484,8 @@ const translations = {
       formSuccessBody:
         "Gracias por escribirnos. Nos pondremos en contacto pronto.",
       emailLabel: "Correo",
+      instagramLabel: "Instagram",
+      instagramHandle: "@latin.canada",
       locationLabel: "Con sede en",
       location: "Vancouver, Columbia Británica, Canadá",
     },

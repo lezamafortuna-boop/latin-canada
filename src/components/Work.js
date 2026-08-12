@@ -98,6 +98,22 @@ function ProjectCard({ project, w, reversed }) {
           />
           <MetaItem label={w.yearLabel} value={project.year} />
         </div>
+
+        {project.instagram ? (
+          <div className="mt-6 border-t border-white/10 pt-6">
+            <p className="text-[0.65rem] uppercase tracking-[0.2em] text-paper/40">
+              Instagram
+            </p>
+            <a
+              href={project.instagram}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-1 inline-block text-sm text-sky-300 transition-colors hover:text-sky-200"
+            >
+              {project.instagramHandle || "@jouska_theend"}
+            </a>
+          </div>
+        ) : null}
       </div>
     </div>
   );
