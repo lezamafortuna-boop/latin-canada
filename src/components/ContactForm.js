@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, MapPin, CheckCircle2, DramaIcon } from "lucide-react";
+import { Mail, MapPin, CheckCircle2, Instagram } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 
 const EMPTY_FORM = { name: "", email: "", subject: "", message: "" };
@@ -22,10 +22,19 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("submitting");
 
-    // NOTE: this is a placeholder submit handler. Wire it up to a real
-    // endpoint (e.g. an /api/contact route backed by Resend, SendGrid,
-    // or Formspree) before going live.
+    const subject = form.subject || "Latin Canada inquiry";
+    const body = [
+      `Name: ${form.name}`,
+      `Email: ${form.email}`,
+      `Subject: ${subject}`,
+      "",
+      "Message:",
+      form.message,
+    ].join("\n");
+
     await new Promise((resolve) => setTimeout(resolve, 700));
+
+    window.location.href = `mailto:franciscopassuelo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     setStatus("success");
     setForm(EMPTY_FORM);
@@ -46,7 +55,7 @@ export default function ContactForm() {
                 href="mailto:franciscopassuelo@gmail.com"
               />
               <InfoRow
-                icon={DramaIcon}
+                icon={Instagram}
                 label={c.instagramLabel}
                 value={c.instagramHandle}
                 href="https://www.instagram.com/latin.canada?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="

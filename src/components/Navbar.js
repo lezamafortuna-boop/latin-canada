@@ -56,7 +56,7 @@ export default function Navbar() {
           <LangToggle lang={lang} toggleLang={toggleLang} />
           <Link
             href="#contact"
-            className="rounded-full bg-red-600 px-5 py-2 text-sm font-semibold tracking-wide text-paper transition-colors hover:bg-red-500"
+            className="rounded-full bg-red-600 px-4 py-1.5 text-sm font-semibold tracking-wide text-paper transition-colors hover:bg-red-500"
           >
             {t.nav.cta}
           </Link>

@@ -203,7 +203,7 @@ const translations = {
         cinematography: "Francisco Passuelo",
         year: "2026",
         description:
-          "A music video collaboration with Salvadorean/Canadian synth-pop artist Jandrou.",
+          "A visual art collaboration with Salvadorean/Canadian synth-pop artist Jandrou blending music and cinematic storytelling.",
         status: "comingSoon",
       },
     ],
@@ -448,7 +448,7 @@ const translations = {
         cinematography: "Francisco Passuelo",
         year: "2026",
         description:
-          "Una colaboración para un video musical con el artista salvadoreño-canadiense de synth-pop Jandrou.",
+          "Colaboración de arte visual con el artista salvadoreño-canadiense de synth-pop Jandrou.",
         status: "comingSoon",
       },
     ],
