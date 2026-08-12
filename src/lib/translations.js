@@ -20,7 +20,7 @@ const translations = {
     },
     hero: {
       eyebrow: "",
-      tagline: "Vancouver Based Production House.",
+      tagline: "Vancouver based production house.",
       subtext:
         "Every project carries a piece of where we came from and where we now belong.",
       ctaPrimary: "Explore Our Work",
@@ -156,10 +156,8 @@ const translations = {
       ],
     },
     work: {
-      eyebrow: "Watch",
+      eyebrow: "",
       title: "Our Work",
-      subtitle:
-        "Selected productions from the Latin Canada slate — cinematography by Francisco Passuelo, ICG 669.",
       directorLabel: "Director",
       producerLabel: "Producer",
       cinematographyLabel: "Cinematography",
@@ -267,7 +265,7 @@ const translations = {
     },
     hero: {
       eyebrow: "",
-      tagline: "Casa de Producción con Sede en Vancouver.",
+      tagline: "Casa de producción situada en Vancouver.",
       subtext:
         "Cada proyecto lleva consigo un pedazo de dónde venimos y a dónde pertenecemos ahora.",
       ctaPrimary: "Explora Nuestro Trabajo",
@@ -403,10 +401,8 @@ const translations = {
       ],
     },
     work: {
-      eyebrow: "Ver",
+      eyebrow: "",
       title: "Nuestro Trabajo",
-      subtitle:
-        "Producciones seleccionadas de Latin Canada — cinematografía de Francisco Passuelo, ICG 669.",
       directorLabel: "Director",
       producerLabel: "Productora",
       cinematographyLabel: "Cinematografía",
