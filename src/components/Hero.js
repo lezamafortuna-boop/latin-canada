@@ -27,7 +27,7 @@ export default function Hero() {
           <p className="section-eyebrow mb-5 text-navy-600">{t.hero.eyebrow}</p>
         ) : null}
 
-        <h1 className="font-display text-balance whitespace-nowrap text-[1rem] font-semibold leading-[1.1] text-navy-950 sm:text-[1.3rem] lg:text-[2.2rem]">
+        <h1 className="font-display text-balance whitespace-nowrap text-[1rem] font-semibold leading-[1.1] text-navy-950 sm:text-[1rem] lg:text-[2rem]">
           {t.hero.tagline}
         </h1>
 

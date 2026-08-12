@@ -38,9 +38,6 @@ export default function Navbar() {
             className="h-10 w-auto object-contain"
             priority
           />
-          <span className="font-display text-lg tracking-wide text-navy-950">
-            LATIN<span className="text-red-600">CANADA</span>
-          </span>
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex">

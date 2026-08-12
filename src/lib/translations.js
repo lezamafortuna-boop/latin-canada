@@ -176,7 +176,7 @@ const translations = {
         cinematography: "Francisco Passuelo",
         year: "2025",
         description:
-          "Documentary short film. Luis, a Latino immigrant in Canada, seeks identity and belonging while building a new home far from his country.",
+          "Luis, a Latino immigrant in Canada, seeks identity and belonging while building a new home far from his country.",
         status: "released",
       },
       {
@@ -413,7 +413,7 @@ const translations = {
     projects: [
       {
         id: "luis-at-home",
-        type: "Documental Corto",
+        type: "Cortometraje Documental",
         title: "Luis at Home",
         subtitle: "Crónica de un Expatriado",
         director: "Francisco Passuelo",
@@ -421,7 +421,7 @@ const translations = {
         cinematography: "Francisco Passuelo",
         year: "2025",
         description:
-          "Un cortometraje documental que retrata la vida de Luis un inmigrante latino en Canadá, busca identidad y pertenencia mientras construye un nuevo hogar lejos de su país.",
+          "Luis un inmigrante latino en Canadá, busca identidad y pertenencia mientras construye un nuevo hogar lejos de su país.",
         status: "released",
       },
       {
