@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, MapPin, CheckCircle2, link } from "lucide-react";
+import { Mail, MapPin, CheckCircle2, Link } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 
 const EMPTY_FORM = { name: "", email: "", subject: "", message: "" };
@@ -30,7 +30,7 @@ export default function ContactForm() {
       "",
       "Message:",
       form.message,
-    ].join("\n");
+    ].join("\r\n");
 
     await new Promise((resolve) => setTimeout(resolve, 700));
 
@@ -55,10 +55,16 @@ export default function ContactForm() {
                 href="mailto:franciscopassuelo@gmail.com"
               />
               <InfoRow
-                icon={link}
+                icon={Link}
                 label={c.instagramLabel}
                 value={c.instagramHandle}
                 href="https://www.instagram.com/latin.canada?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              />
+              <InfoRow
+                icon={Link}
+                label={c.youtubeLabel}
+                value={c.youtubeHandle}
+                href={c.youtubeUrl}
               />
               <InfoRow icon={MapPin} label={c.locationLabel} value={c.location} />
             </div>

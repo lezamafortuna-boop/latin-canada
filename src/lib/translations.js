@@ -20,10 +20,11 @@ const translations = {
     },
     hero: {
       eyebrow: "",
-      tagline: "Vancouver based production house.",
+      tagline: "Vancouver-based production house, centering Latin artists and welcoming all who want to build community with us.",
       subtext:
         "Every project carries a piece of where we came from and where we now belong.",
       ctaPrimary: "Explore Our Work",
+      screeningLabel: "Festivales / Premios",
       ctaSecondary: "Contact Us",
       scroll: "Scroll",
     },
@@ -161,6 +162,9 @@ const translations = {
       directorLabel: "Director",
       producerLabel: "Producer",
       cinematographyLabel: "Cinematography",
+      writtenByLabel: "Written by",
+      starringLabel: "Starring",
+      screeningLabel: "Festivals / Awards",
       yearLabel: "Year",
       comingSoonLabel: "Coming Soon",
       comingSoonNote: "Currently in post-production. Stills arriving soon.",
@@ -173,8 +177,15 @@ const translations = {
         subtitle: "Chronicle of an Expat",
         director: "Francisco Passuelo",
         producer: "Latin Canada",
-        cinematography: "Francisco Passuelo",
+        cinematography: "Luis Lezama - Francisco Passuelo",
+        starring: "Luis Lezama",
         year: "2025",
+        festivales: `Vancouver Latin American Film Festival (VLAFF) — 23rd Edition
+      FICI — Festival Internacional de Cine Independiente LGBTIQ+ — 3rd Edition
+      Vancouver Public Library Indie Film Night — 1st Edition
+      QIFF Playa del Carmen — 13th Edition
+      Contra el Silencio Todas las Voces — XIV Edition
+      Reel Pride International Film Festival — Winnipeg`,
         description:
           "Luis, a Latino immigrant in Canada, seeks identity and belonging while building a new home far from his country.",
         status: "released",
@@ -185,8 +196,12 @@ const translations = {
         title: "Jouska",
         director: "Vanesa Paredes",
         producer: "Latin Canada / Vanesa Paredes",
-        cinematography: "Francisco Passuelo",
+        cinematography: "Catalina Uribe",
+        starring: "Tayla Eddy - Oliver Sargeant",
         year: "2026",
+        festivales: `Bluez Dolphins 'Best short female director'
+      Lift-Off Global Network New York
+      Black Panther international short film festival 'Winner'`,
         instagram:
           "https://www.instagram.com/jouska_theend?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
         instagramHandle: "@jouska_theend",
@@ -200,8 +215,10 @@ const translations = {
         title: "Crying at the Dairy Queen",
         director: "Francisco Passuelo",
         producer: "Latin Canada / Jandrou",
-        cinematography: "Francisco Passuelo",
+        cinematography: "Jandrou - Francisco Passuelo",
+        starring: "Jandrou - Faye Ludwar",
         year: "2026",
+        festivales: "",
         description:
           "A visual art collaboration with Salvadorean/Canadian synth-pop artist Jandrou blending music and cinematic storytelling.",
         status: "comingSoon",
@@ -236,6 +253,9 @@ const translations = {
         "Thank you for reaching out. We'll be in touch shortly.",
       emailLabel: "Email",
       instagramLabel: "Instagram",
+      youtubeLabel: "YouTube",
+      youtubeHandle: "@latin.canada",
+      youtubeUrl: "https://youtube.com/@latin.canada?si=qJHlbYBabW7slLwe",
       instagramHandle: "@latin.canada",
       locationLabel: "Based in",
       location: "Vancouver, British Columbia, Canada",
@@ -418,8 +438,15 @@ const translations = {
         subtitle: "Crónica de un Expatriado",
         director: "Francisco Passuelo",
         producer: "Latin Canada",
-        cinematography: "Francisco Passuelo",
+        cinematography: "Luis Lezama -Francisco Passuelo",
+        starring: "Luis Lezama",
         year: "2025",
+        festivales: `Vancouver Latin American Film Festival (VLAFF) — 23rd Edition
+      FICI — Festival Internacional de Cine Independiente LGBTIQ+ — 3rd Edition
+      Vancouver Public Library Indie Film Night — 1st Edition
+      QIFF Playa del Carmen — 13th Edition
+      Contra el Silencio Todas las Voces — XIV Edition
+      Reel Pride International Film Festival — Winnipeg`,
         description:
           "Luis un inmigrante latino en Canadá, busca identidad y pertenencia mientras construye un nuevo hogar lejos de su país.",
         status: "released",
@@ -430,8 +457,12 @@ const translations = {
         title: "Jouska",
         director: "Vanesa Paredes",
         producer: "Latin Canada / Vanesa Paredes",
-        cinematography: "Francisco Passuelo",
+        cinematography: "Catalina Uribe",
+        starring: "Tayla Eddy - Oliver Sargeant",
         year: "2026",
+        festivales: `Bluez Dolphins 'Best short female director'
+      Lift-Off Global Network New York
+      Black Panther international short film festival 'Winner'`,
         instagram:
           "https://www.instagram.com/jouska_theend?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
         instagramHandle: "@jouska_theend",
@@ -445,7 +476,8 @@ const translations = {
         title: "Crying at the Dairy Queen",
         director: "Francisco Passuelo",
         producer: "Latin Canada / Jandrou",
-        cinematography: "Francisco Passuelo",
+        cinematography: "Jandrou - Francisco Passuelo",
+        starring: "Jandrou - Faye Ludwar",
         year: "2026",
         description:
           "Colaboración de arte visual con el artista salvadoreño-canadiense de synth-pop Jandrou.",
@@ -481,6 +513,9 @@ const translations = {
         "Gracias por escribirnos. Nos pondremos en contacto pronto.",
       emailLabel: "Correo",
       instagramLabel: "Instagram",
+      youtubeLabel: "YouTube",
+      youtubeHandle: "@latin.canada",
+      youtubeUrl: "https://youtube.com/@latin.canada?si=qJHlbYBabW7slLwe",
       instagramHandle: "@latin.canada",
       locationLabel: "Con sede en",
       location: "Vancouver, Columbia Británica, Canadá",
