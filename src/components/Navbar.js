@@ -20,6 +20,11 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    document.documentElement.dataset.menuOpen = String(open);
+    return () => delete document.documentElement.dataset.menuOpen;
+  }, [open]);
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 border-b bg-white transition-shadow duration-300 ${
@@ -28,17 +33,17 @@ export default function Navbar() {
           : "border-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-        <Link href="#top" className="flex items-center gap-3 shrink-0">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-10 lg:py-4">
+        <Link href="#top" className="flex min-w-0 items-center gap-2 shrink-0">
           <Image
             src="/brand/swallow.png"
             alt="Latin Canada — swallow enclosed in a postage stamp"
             width={80}
             height={64}
-            className="h-10 w-auto object-contain"
+            className="h-8 w-auto object-contain sm:h-9"
             priority
           />
-          <span className="font-display text-lg tracking-wide text-navy-950">
+          <span className="font-display text-base tracking-wide text-navy-950 sm:text-lg">
             LATIN<span className="text-red-600">CANADA</span>
           </span>
         </Link>
@@ -55,32 +60,32 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden items-center gap-4 lg:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <LangToggle lang={lang} toggleLang={toggleLang} />
           <Link
             href="#contact"
-            className="inline-flex items-center justify-center rounded-full bg-red-600 px-5 py-2 text-sm font-semibold tracking-wide text-paper transition-colors hover:bg-red-500"
+            className="inline-flex h-7 items-center justify-center rounded-full bg-red-600 px-2.5 text-[0.7rem] font-semibold tracking-wide text-paper transition-colors hover:bg-red-500"
           >
             {t.nav.cta}
           </Link>
         </div>
 
-        <div className="flex items-center gap-3 lg:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <LangToggle lang={lang} toggleLang={toggleLang} />
           <button
             type="button"
             aria-label="Toggle menu"
             onClick={() => setOpen((v) => !v)}
-            className="rounded-full border border-navy-900/15 p-2 text-navy-950"
+            className="flex h-7 w-7 items-center justify-center rounded-full border border-navy-900/15 text-navy-950"
           >
-            {open ? <X size={20} /> : <Menu size={20} />}
+            {open ? <X size={16} /> : <Menu size={16} />}
           </button>
         </div>
       </nav>
 
       {open && (
         <div className="border-t border-navy-900/10 bg-white lg:hidden">
-          <div className="flex flex-col gap-1 px-6 py-4">
+          <div className="flex flex-col gap-1 px-4 py-3 sm:px-6 sm:py-4">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.key}
@@ -94,7 +99,7 @@ export default function Navbar() {
             <Link
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-full bg-red-600 px-4 py-1.5 text-center text-sm font-semibold text-paper"
+              className="mt-2 inline-flex h-7 self-start items-center justify-center rounded-full bg-red-600 px-2.5 text-[0.7rem] font-semibold text-paper"
             >
               {t.nav.cta}
             </Link>
@@ -111,17 +116,17 @@ function LangToggle({ lang, toggleLang }) {
       type="button"
       onClick={toggleLang}
       aria-label="Toggle language"
-      className="flex items-center overflow-hidden rounded-full border border-navy-900/20 text-xs font-semibold tracking-wide text-navy-900/80"
+      className="flex h-7 items-center overflow-hidden rounded-full border border-navy-900/20 text-[0.6rem] font-semibold tracking-wide text-navy-900/80"
     >
       <span
-        className={`inline-flex h-9 items-center justify-center px-4 transition-colors ${
+        className={`inline-flex h-full w-7 items-center justify-center transition-colors ${
           lang === "en" ? "bg-red-600 text-paper" : "text-navy-900/50"
         }`}
       >
         EN
       </span>
       <span
-        className={`inline-flex h-9 items-center justify-center px-4 transition-colors ${
+        className={`inline-flex h-full w-7 items-center justify-center transition-colors ${
           lang === "es" ? "bg-red-600 text-paper" : "text-navy-900/50"
         }`}
       >

@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-white"
+      className="relative flex min-h-screen items-start justify-center overflow-hidden bg-white pt-20 transition-[padding-top] duration-300 sm:items-center sm:pt-0"
     >
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-6 text-center">
         <Image
@@ -19,7 +19,7 @@ export default function Hero() {
           alt="Latin Canada brand mark"
           width={900}
           height={700}
-          className="mb-8 h-[300px] w-auto object-contain sm:h-[420px]"
+          className="mb-6 h-[220px] w-auto object-contain sm:mb-8 sm:h-[420px]"
           priority
         />
 
@@ -27,7 +27,7 @@ export default function Hero() {
           <p className="section-eyebrow mb-5 text-navy-600">{t.hero.eyebrow}</p>
         ) : null}
 
-        <h1 className="font-display text-balance whitespace-nowrap text-[1rem] font-semibold leading-[1.1] text-navy-950 sm:text-[0.5rem] lg:text-[1.5rem]">
+        <h1 className="font-display text-balance text-base font-semibold leading-[1.2] text-navy-950 sm:text-lg lg:text-xl">
           {t.hero.tagline}
         </h1>
 

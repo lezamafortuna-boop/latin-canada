@@ -13,14 +13,14 @@ const translations = {
       about: "About",
       founder: "Founder",
       services: "Services",
-      work: "Our Work",
+      work: "Select Works",
       gallery: "Gallery",
       contact: "Contact",
       cta: "Contact Us",
     },
     hero: {
       eyebrow: "",
-      tagline: "Vancouver-based production house, centering Latin artists and welcoming all who want to build community with us.",
+      tagline: "Vancouver-based independent production house, born from a simple idea, to bring artists together and create space for the stories that matter to us.",
       subtext:
         "Every project carries a piece of where we came from and where we now belong.",
       ctaPrimary: "Explore Our Work",
@@ -193,7 +193,7 @@ const translations = {
       {
         id: "jouska",
         type: "Short Film",
-        title: "Jouska",
+        title: "Jouska The End",
         director: "Vanesa Paredes",
         producer: "Latin Canada / Vanesa Paredes",
         cinematography: "Catalina Uribe",
@@ -206,7 +206,7 @@ const translations = {
           "https://www.instagram.com/jouska_theend?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
         instagramHandle: "@jouska_theend",
         description:
-          "A Hypothetical or imaginary converstation that you compulsively play out in your head. `Jouska the end` is a sci-fi drama set in Vancouver, Canada.",
+          "A hypothetical or imaginary conversation that you compulsively play out in your head. Jouska is a sci-fi drama about a couple confronting a fading relationship, while the world ends.",
         status: "released",
       },
       {
@@ -220,7 +220,7 @@ const translations = {
         year: "2026",
         festivales: "",
         description:
-          "A visual art collaboration with Salvadorean/Canadian synth-pop artist Jandrou blending music and cinematic storytelling.",
+          "A visual art collaboration with Salvadoran-Canadian synth-pop artist Jandrou, blending music and cinematic storytelling. Inspired by a real breakup, the piece explores the emotional weight often left out of queer love stories.",
         status: "comingSoon",
       },
     ],
@@ -278,7 +278,7 @@ const translations = {
       about: "Nosotros",
       founder: "Fundador",
       services: "Servicios",
-      work: "Nuestro Trabajo",
+      work: "Select Works",
       gallery: "Galería",
       contact: "Contacto",
       cta: "Contáctanos",
@@ -287,7 +287,7 @@ const translations = {
       eyebrow: "",
       tagline: "Casa productora en Vancouver.",
       subtext:
-        "Cada proyecto lleva consigo un pedazo de dónde venimos y a dónde pertenecemos ahora.",
+        " Casa productora audiovisual independiente en Vancouver, que nace de la simple idea de reunir artistas y crear espacio para contar nuestras historias.",
       ctaPrimary: "Explora Nuestro Trabajo",
       ctaSecondary: "Contáctanos",
       scroll: "Desplázate",
@@ -448,7 +448,7 @@ const translations = {
       Contra el Silencio Todas las Voces — XIV Edition
       Reel Pride International Film Festival — Winnipeg`,
         description:
-          "Luis un inmigrante latino en Canadá, busca identidad y pertenencia mientras construye un nuevo hogar lejos de su país.",
+          "Luis, un inmigrante latino en Canadá, busca identidad y pertenencia mientras construye un nuevo hogar lejos de su país.",
         status: "released",
       },
       {
@@ -467,7 +467,7 @@ const translations = {
           "https://www.instagram.com/jouska_theend?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
         instagramHandle: "@jouska_theend",
         description:
-          "Una conversación hipotética o imaginaria que reproduces de forma compulsiva en tu cabeza. `Jouska the end` es un drama de ciencia ficción ambientado en Vancouver, Canadá.",
+          "Jouska, una conversación hipotética o imaginaria que revives obsesivamente en tu cabeza. Jouska es un drama de ciencia ficción sobre una pareja que enfrenta una relación que se apaga, mientras el mundo se acaba.",
         status: "released",
       },
       {
@@ -480,7 +480,7 @@ const translations = {
         starring: "Jandrou - Faye Ludwar",
         year: "2026",
         description:
-          "Colaboración de arte visual con el artista salvadoreño-canadiense de synth-pop Jandrou.",
+          "Una colaboración artística visual con el artista de synth pop salvadoreño-canadiense Andrés, que mezcla música y narrativa cinematográfica. Inspirada en una ruptura real, la pieza explora el peso emocional que muchas veces se deja fuera de las historias de amor queer.",
         status: "comingSoon",
       },
     ],

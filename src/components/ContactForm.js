@@ -11,7 +11,8 @@ export default function ContactForm() {
   const c = t.contact;
 
   const [form, setForm] = useState(EMPTY_FORM);
-  const [status, setStatus] = useState("idle"); // idle | submitting | success
+  const [status, setStatus] = useState("idle"); // idle | submitting | success | error
+  const [errorMessage, setErrorMessage] = useState("");
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -21,23 +22,34 @@ export default function ContactForm() {
   async function handleSubmit(e) {
     e.preventDefault();
     setStatus("submitting");
+    setErrorMessage("");
 
-    const subject = form.subject || "Latin Canada inquiry";
-    const body = [
-      `Name: ${form.name}`,
-      `Email: ${form.email}`,
-      `Subject: ${subject}`,
-      "",
-      "Message:",
-      form.message,
-    ].join("\r\n");
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+        }),
+      });
 
-    await new Promise((resolve) => setTimeout(resolve, 700));
+      const data = await response.json();
 
-    window.location.href = `mailto:franciscopassuelo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      if (!response.ok) {
+        throw new Error(data?.message || "Unable to send message.");
+      }
 
-    setStatus("success");
-    setForm(EMPTY_FORM);
+      setStatus("success");
+      setForm(EMPTY_FORM);
+    } catch (error) {
+      setStatus("error");
+      setErrorMessage(error.message || "Something went wrong.");
+    }
   }
 
   return (
@@ -52,7 +64,6 @@ export default function ContactForm() {
                 icon={Mail}
                 label={c.emailLabel}
                 value="franciscopassuelo@gmail.com"
-                href="mailto:franciscopassuelo@gmail.com"
               />
               <InfoRow
                 icon={Link}
@@ -124,6 +135,10 @@ export default function ContactForm() {
                   placeholder={c.formMessagePlaceholder}
                   required
                 />
+
+                {status === "error" && (
+                  <p className="text-sm text-red-400">{errorMessage}</p>
+                )}
 
                 <button
                   type="submit"

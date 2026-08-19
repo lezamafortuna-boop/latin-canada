@@ -45,6 +45,12 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
+@media (max-width: 1023px) {
+  html[data-menu-open="true"] #top {
+    padding-top: 12rem;
+  }
+}
+
 /* ---------- Film grain overlay ---------- */
 /* Applied as a fixed, full-viewport layer so it reads consistently
    across every section without being baked into each background. */
