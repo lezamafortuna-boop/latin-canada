@@ -238,7 +238,7 @@ const translations = {
       eyebrow: "Contact",
       title: "Let's build something that lasts.",
       subtitle:
-        "Production companies, festival programmers, collaborators, and institutions — we'd love to hear about your story.",
+        "-Directors, actors, writers, cinematographers, editors, composers, stylists, PAs, and everyone in between, we see you. We want to collaborate. Contact us, let’s build something together. -Festivals and programmers, reach out to inquire about our work.",
       formNameLabel: "Name",
       formNamePlaceholder: "Your full name",
       formEmailLabel: "Email",
