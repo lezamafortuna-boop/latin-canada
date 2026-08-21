@@ -1,5 +1,7 @@
 import nodemailer from "nodemailer";
 
+export const runtime = "nodejs";
+
 export async function POST(request) {
   const body = await request.json().catch(() => null);
   const { name, email, subject, message } = body || {};
@@ -17,14 +19,27 @@ export async function POST(request) {
 
   if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASS) {
     console.error("Missing SMTP environment variables.");
-    return Response.json({ message: "Failed to send email" }, { status: 500 });
+    return Response.json(
+      { message: "Email service is not configured." },
+      { status: 500 }
+    );
   }
 
   try {
+    const port = Number(SMTP_PORT);
+
+    if (!Number.isInteger(port) || port <= 0) {
+      console.error("Invalid SMTP_PORT environment variable.");
+      return Response.json(
+        { message: "Email service is not configured." },
+        { status: 500 }
+      );
+    }
+
     const transporter = nodemailer.createTransport({
       host: SMTP_HOST,
-      port: Number(SMTP_PORT),
-      secure: false,
+      port,
+      secure: port === 465,
       auth: {
         user: SMTP_USER,
         pass: SMTP_PASS,
@@ -59,7 +74,17 @@ export async function POST(request) {
 
     return Response.json({ message: "Email sent successfully" });
   } catch (error) {
-    console.error("Contact form email failed:", error);
-    return Response.json({ message: "Failed to send email" }, { status: 500 });
+    console.error("Contact form email failed:", {
+      code: error?.code,
+      command: error?.command,
+      responseCode: error?.responseCode,
+    });
+
+    const message =
+      error?.code === "EAUTH" || error?.responseCode === 535
+        ? "Email service authentication failed."
+        : "Unable to send email right now.";
+
+    return Response.json({ message }, { status: 500 });
   }
 }
