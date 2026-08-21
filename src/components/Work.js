@@ -51,7 +51,7 @@ function ProjectCard({ project, w, reversed }) {
         reversed ? "lg:flex-row-reverse" : ""
       }`}
     >
-      <div className="lg:w-[62%]">
+      <div className="order-1 lg:w-[62%]">
         <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-white/10 bg-navy-900">
           {image ? (
             <Image
@@ -75,7 +75,7 @@ function ProjectCard({ project, w, reversed }) {
         </div>
 
         {project.festivales ? (
-          <div className="mt-6 rounded-2xl border border-white/10 bg-navy-900 p-6 text-sm text-paper/85">
+          <div className="mt-6 hidden rounded-2xl border border-white/10 bg-navy-900 p-6 text-sm text-paper/85 lg:block">
             <p className="text-[0.65rem] uppercase tracking-[0.2em] text-paper/40">
               {w.screeningLabel}
             </p>
@@ -90,7 +90,7 @@ function ProjectCard({ project, w, reversed }) {
         ) : null}
       </div>
 
-      <div className="flex flex-col justify-center lg:justify-start lg:w-[38%]">
+      <div className="order-2 flex flex-col justify-center lg:justify-start lg:w-[38%]">
         <p className="section-eyebrow text-red-500">{project.type}</p>
         <h3 className="font-display mt-3 text-2xl text-paper sm:text-3xl">
           {project.title}
@@ -128,6 +128,21 @@ function ProjectCard({ project, w, reversed }) {
           </div>
         ) : null}
       </div>
+
+      {project.festivales ? (
+        <div className="order-3 rounded-2xl border border-white/10 bg-navy-900 p-6 text-sm text-paper/85 lg:hidden">
+          <p className="text-[0.65rem] uppercase tracking-[0.2em] text-paper/40">
+            {w.screeningLabel}
+          </p>
+          <div className="mt-2 space-y-1">
+            {project.festivales.split(/\r?\n/).map((line, i) => (
+              <p key={i} className="text-sm leading-snug">
+                {line}
+              </p>
+            ))}
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
