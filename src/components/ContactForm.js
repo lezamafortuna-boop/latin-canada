@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, MapPin, CheckCircle2, Link } from "lucide-react";
+import { Mail, CheckCircle2, Link } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 
 const EMPTY_FORM = { name: "", email: "", subject: "", message: "" };
@@ -67,8 +67,7 @@ export default function ContactForm() {
               />
               <InfoRow
                 icon={Link}
-                label={c.instagramLabel}
-                value={c.instagramHandle}
+                label={c.instagramMessage}
                 href="https://www.instagram.com/latin.canada?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               />
               <InfoRow
@@ -77,7 +76,6 @@ export default function ContactForm() {
                 value={c.youtubeHandle}
                 href={c.youtubeUrl}
               />
-              <InfoRow icon={MapPin} label={c.locationLabel} value={c.location} />
             </div>
           </div>
 
@@ -159,10 +157,16 @@ export default function ContactForm() {
 function InfoRow({ icon: Icon, label, value, href }) {
   const content = (
     <>
-      <p className="text-xs uppercase tracking-[0.2em] text-paper/45">
+      <p
+        className={
+          value
+            ? "text-xs uppercase tracking-[0.2em] text-paper/45"
+            : "text-paper/85"
+        }
+      >
         {label}
       </p>
-      <p className="mt-1 text-paper/85">{value}</p>
+      {value && <p className="mt-1 text-paper/85">{value}</p>}
     </>
   );
 

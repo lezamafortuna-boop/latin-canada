@@ -253,6 +253,8 @@ const translations = {
         "Thank you for reaching out. We'll be in touch shortly.",
       emailLabel: "Email",
       instagramLabel: "Instagram",
+      instagramMessage:
+        "We skip the newsletters, just genuine curiosity. Let’s follow each other on Instagram",
       youtubeLabel: "YouTube",
       youtubeHandle: "@latin.canada",
       youtubeUrl: "https://youtube.com/@latin.canada?si=qJHlbYBabW7slLwe",
@@ -513,6 +515,8 @@ const translations = {
         "Gracias por escribirnos. Nos pondremos en contacto pronto.",
       emailLabel: "Correo",
       instagramLabel: "Instagram",
+      instagramMessage:
+        "Nos saltamos los boletines; solo curiosidad genuina. Sigámonos en Instagram",
       youtubeLabel: "YouTube",
       youtubeHandle: "@latin.canada",
       youtubeUrl: "https://youtube.com/@latin.canada?si=qJHlbYBabW7slLwe",
