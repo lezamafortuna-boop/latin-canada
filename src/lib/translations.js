@@ -158,7 +158,7 @@ const translations = {
     },
     work: {
       eyebrow: "",
-      title: "Our Work",
+      title: "Select Works",
       directorLabel: "Director",
       producerLabel: "Producer",
       cinematographyLabel: "Cinematography",
