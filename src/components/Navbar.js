@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 
@@ -34,49 +33,49 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-10 lg:py-4">
-        <Link href="#top" className="flex min-w-0 items-center gap-2 shrink-0">
+        <a href="#top" className="flex min-w-0 items-center gap-2 shrink-0">
           <Image
-            src="/brand/swallow.png"
+            src="/brand/StampSwallow.png"
             alt="Latin Canada — swallow enclosed in a postage stamp"
-            width={80}
+            width={64}
             height={64}
-            className="h-8 w-auto object-contain sm:h-9"
+            className="h-8 w-8 object-contain sm:h-9 sm:w-9"
             priority
           />
           <span className="font-display text-base tracking-wide text-navy-950 sm:text-lg">
             LATIN<span className="text-red-600">CANADA</span>
           </span>
-        </Link>
+        </a>
 
-        <div className="hidden items-center gap-8 lg:flex">
+        <div className="hidden items-center gap-6 md:flex lg:gap-8">
           {NAV_LINKS.map((link) => (
-            <Link
+            <a
               key={link.key}
               href={link.href}
-              className="text-sm font-medium tracking-wide text-navy-900/70 transition-colors hover:text-red-600"
+              className="whitespace-nowrap text-sm font-medium tracking-wide text-navy-900/70 transition-colors hover:text-red-600"
             >
               {t.nav[link.key]}
-            </Link>
+            </a>
           ))}
         </div>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-2 md:flex">
           <LangToggle lang={lang} toggleLang={toggleLang} />
-          <Link
+          <a
             href="#contact"
-            className="inline-flex h-7 items-center justify-center rounded-full bg-red-600 px-2.5 text-[0.7rem] font-semibold tracking-wide text-paper transition-colors hover:bg-red-500"
+            className="inline-flex h-6 items-center justify-center whitespace-nowrap rounded-full bg-red-600 px-2 text-[0.65rem] font-semibold tracking-wide text-paper transition-colors hover:bg-red-500"
           >
             {t.nav.cta}
-          </Link>
+          </a>
         </div>
 
-        <div className="flex items-center gap-2 lg:hidden">
+        <div className="flex items-center gap-2 md:hidden">
           <LangToggle lang={lang} toggleLang={toggleLang} />
           <button
             type="button"
             aria-label="Toggle menu"
             onClick={() => setOpen((v) => !v)}
-            className="flex h-7 w-7 items-center justify-center rounded-full border border-navy-900/15 text-navy-950"
+            className="flex h-6 w-6 items-center justify-center rounded-full border border-navy-900/15 text-navy-950"
           >
             {open ? <X size={16} /> : <Menu size={16} />}
           </button>
@@ -84,25 +83,25 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-navy-900/10 bg-white lg:hidden">
+        <div className="border-t border-navy-900/10 bg-white md:hidden">
           <div className="flex flex-col gap-1 px-4 py-3 sm:px-6 sm:py-4">
             {NAV_LINKS.map((link) => (
-              <Link
+              <a
                 key={link.key}
                 href={link.href}
                 onClick={() => setOpen(false)}
                 className="rounded-lg px-3 py-3 text-base font-medium text-navy-900/85 transition-colors hover:bg-navy-950/5"
               >
                 {t.nav[link.key]}
-              </Link>
+              </a>
             ))}
-            <Link
+            <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-2 inline-flex h-7 self-start items-center justify-center rounded-full bg-red-600 px-2.5 text-[0.7rem] font-semibold text-paper"
+              className="mt-2 inline-flex h-6 self-start items-center justify-center rounded-full bg-red-600 px-2 text-[0.65rem] font-semibold text-paper"
             >
               {t.nav.cta}
-            </Link>
+            </a>
           </div>
         </div>
       )}
@@ -116,17 +115,17 @@ function LangToggle({ lang, toggleLang }) {
       type="button"
       onClick={toggleLang}
       aria-label="Toggle language"
-      className="flex h-7 items-center overflow-hidden rounded-full border border-navy-900/20 text-[0.6rem] font-semibold tracking-wide text-navy-900/80"
+      className="flex h-6 items-center overflow-hidden rounded-full border border-navy-900/20 text-[0.55rem] font-semibold tracking-wide text-navy-900/80"
     >
       <span
-        className={`inline-flex h-full w-7 items-center justify-center transition-colors ${
+        className={`inline-flex h-full w-6 items-center justify-center transition-colors ${
           lang === "en" ? "bg-red-600 text-paper" : "text-navy-900/50"
         }`}
       >
         EN
       </span>
       <span
-        className={`inline-flex h-full w-7 items-center justify-center transition-colors ${
+        className={`inline-flex h-full w-6 items-center justify-center transition-colors ${
           lang === "es" ? "bg-red-600 text-paper" : "text-navy-900/50"
         }`}
       >

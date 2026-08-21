@@ -16,12 +16,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Latin Canada — Cinematic Production House",
+  title: "Vancouver-based independent production house",
   description:
     "Latin Canada is a cinematic production house rooted in migration, craftsmanship, and cultural identity. Where Latin roots meet Canadian horizons.",
-  icons: {
-    icon: "/brand/latincanada-mark.png",
-  },
 };
 
 export default function RootLayout({ children }) {
